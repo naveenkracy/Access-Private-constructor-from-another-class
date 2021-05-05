@@ -1,0 +1,19 @@
+import java.lang.reflect.Constructor;
+
+class demo {
+    private demo() {
+        // private!
+    }
+}
+    
+    public class Example {
+        public static void main(final String[] args) throws Exception {
+            Constructor<demo> constructor = demo.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            demo ref = constructor.newInstance();
+            System.out.println(ref);
+        }
+    
+    public String toString() {
+        return "Java";
+    }
