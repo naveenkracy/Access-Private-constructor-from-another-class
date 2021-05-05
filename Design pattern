@@ -1,0 +1,3 @@
+Disadvantage :
+Overkill for a project that uses very few objects and/or does not have an underlying emphasis on the extension of prototype chains.
+It also hides concrete product classes from the client
