@@ -1,0 +1,5 @@
+Disadvantages of Singleton Patter :
+
+Serialization of instantiation is required in-order to make singleton class thread-safe.
+Global access to singleton object is a bad design practice.
+Singleton does not support inheritene of the class.
